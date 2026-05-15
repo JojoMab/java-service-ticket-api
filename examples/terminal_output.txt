@@ -1,0 +1,7 @@
+Started TicketApiApplication.
+GET /reports/summary
+{
+  "totalTickets": 1,
+  "openTickets": 1,
+  "criticalTickets": 1
+}
