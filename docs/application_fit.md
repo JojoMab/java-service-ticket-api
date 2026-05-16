@@ -2,39 +2,22 @@
 
 ## Projektziel
 
-Die Java Service Ticket API simuliert eine einfache REST-Anwendung zur Verwaltung von IT-Service-Tickets. Das Projekt zeigt Grundlagen von Java Backend-Entwicklung, REST-Endpunkten, Service-Schicht, Repository-Schicht, Validierung, Datenhaltung und automatisierten Tests.
+Die Java Service Ticket API simuliert einen einfachen IT-Service-Prozess mit REST-Endpunkten, Validierung, Datenhaltung und Tests. Das Projekt macht Java-Backend-Grundlagen sichtbar.
 
 ## Geeignete Zielunternehmen
 
 | Unternehmen | Warum das Projekt passt | Gezeigte Skills | Empfohlene Präsentation |
-|---|---|---|---|
-| Atruvia | Software Engineering, Banken-IT, Datenbanken und Testing sind relevante Themen. | Java, Spring Boot, REST, JPA, JUnit | Als Java-/Backend-Projekt mit Software-Engineering-Grundlagen präsentieren |
-| Allianz | Die Stelle erwartet Softwareentwicklung, Backend-Grundlagen und IT-Prozessverständnis. | Java, REST API, Validierung, Tests | Als Einstieg in Backend-Entwicklung und digitale Serviceprozesse präsentieren |
-| Finanz Informatik | Finanz-IT, Datenbanken und automatisierte Tests passen zum Profil. | Java, H2/JPA, Maven, CI | Als Finanz-IT-nahes Softwareprojekt präsentieren |
-| ConSol | Praxisnahe Softwareprojekte und moderne Technologien passen zum Projektaufbau. | Spring Boot, Controller, Services, Tests | Als kleines, strukturiertes Softwareprojekt präsentieren |
-| CANCOM | IT-Lösungsdesign, technische Umsetzung und Fehleranalyse passen zu Ticketprozessen. | REST, Service Layer, Datenmodell | Als IT-Service- und Lösungsdesign-Projekt präsentieren |
-| Deutsche Telekom | IT-Systeme, Digitalisierung und Datenbanken werden im Projekt sichtbar. | Java, REST, Datenhaltung | Als Backend-Grundlagenprojekt präsentieren |
-| Atos | Softwareentwicklung, Consulting und Cloud-/IT-nahe Themen passen zum Projekt. | Java, API, Tests | Als einfache Serviceplattform auf Bewerberniveau präsentieren |
-| Deloitte | IT-Prozesse, Digitalisierung und Status-/Serviceprozesse sind fachlich anschlussfähig. | Backend, Prozessmodellierung, Testing | Als Wirtschaftsinformatik-/IT-Prozessprojekt präsentieren |
-| EY | Business Informatics, Digitalisierung und IT-Prozessanalyse passen zum Projekt. | Java, Validierung, API-Struktur | Als Business-IT-Projekt mit technischem Fokus präsentieren |
-
-## Skill-Abdeckung
-
-- Java 21
-- Spring Boot
-- REST API
-- JPA Repository
-- H2-Datenbank
-- DTOs
-- Bean Validation
-- JUnit 5
-- MockMvc
-- Maven
-- GitHub Actions CI
-- Bewerbungsorientierte Dokumentation
+| --- | --- | --- | --- |
+| Atruvia | Banken-IT, Backend, Testing und Dokumentation | Java, Spring Boot, JPA, JUnit | Als Java-/Backend-Projekt präsentieren |
+| Allianz | Softwareentwicklung, Backend, Validierung | REST, DTOs, Tests | Als Softwareentwicklungsprojekt mit IT-Service-Bezug präsentieren |
+| Finanz Informatik | Finanz-IT, Datenbanken, DevOps-Grundlagen | H2, Maven, GitHub Actions | Als Finanz-IT-nahes Backend-Projekt präsentieren |
+| ConSol | Softwareprojekte und moderne Technologien | Controller, Service Layer, Repository | Als strukturiertes Softwareprojekt präsentieren |
+| CANCOM | IT-Service-Prozesse und Kundenbetreuung | Ticketstatus, SLA-nahe Logik | Als IT-Service- und Lösungsdesign-Projekt präsentieren |
+| Deutsche Telekom | IT-Systeme, Digitalisierung, Projektarbeit | REST API, Java, Tests | Als Backend-Grundlagenprojekt präsentieren |
+| Atos | Softwareentwicklung und Consulting | Java, Spring Boot, CI | Als Software- und Consulting-nahes Projekt präsentieren |
+| Deloitte | IT-Prozesse und Statuskommunikation | REST, Reporting-Grundlagen, Dokumentation | Als Wirtschaftsinformatik-Projekt präsentieren |
+| EY | IT-Prozessanalyse und Digitalisierung | Backend, Tests, Dokumentation | Als Business-Informatics-Projekt präsentieren |
 
 ## Level-Einschätzung
 
-**Level 3 – Starkes Bewerberprojekt**, wenn alle Tests und Workflows funktionieren.
-
-Begründung: Das Projekt zeigt eine vollständige kleine Backend-Struktur mit Controller, Service, Repository, DTOs, Datenmodell, Validierung, Tests und verständlicher Dokumentation. Es bleibt bewusst auf Bewerberniveau und behauptet keine produktive Unternehmenslösung.
+Level 3: starkes Bewerberprojekt. Das Projekt hat eine klare Schichtenstruktur, Tests, CI, eine Datenbank und einen nachvollziehbaren Bewerbungskontext.

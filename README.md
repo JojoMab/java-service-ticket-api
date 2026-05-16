@@ -2,78 +2,50 @@
 
 ![Java CI](https://github.com/JojoMab/java-service-ticket-api/actions/workflows/java-ci.yml/badge.svg)
 
-Java Service Ticket API ist ein Bewerberprojekt für duale Studiengänge in Informatik und Wirtschaftsinformatik. Die Anwendung zeigt eine einfache REST-API zur Verwaltung von IT-Service-Tickets und verbindet Java, Spring Boot, JPA, H2-Datenbank, Validierung und Tests in einer nachvollziehbaren Projektstruktur.
+Dieses Bewerberprojekt ist eine einfache Java-REST-API zur Verwaltung von IT-Service-Tickets. Es zeigt Backend-Grundlagen wie Controller, Service-Schicht, Repository, DTOs, Bean Validation, JPA-Datenhaltung mit H2 und automatisierte Tests. Das Projekt ist bewusst als nachvollziehbares Bewerberprojekt für duale Studiengänge in Informatik und Wirtschaftsinformatik aufgebaut.
 
 ## Bewerbungskontext
 
-Das Projekt passt zu Studien- und Ausbildungsumfeldern, in denen Backend-Entwicklung, Software Engineering, IT-Service-Prozesse, Datenbanken und Testing relevant sind. Besonders passend ist es für Bewerbungen bei Atruvia, Allianz, Finanz Informatik, ConSol, CANCOM, Deutsche Telekom, Atos, Deloitte und EY.
+Das Projekt passt zu dualen Studiengängen mit Fokus auf Java, Backend, Software Engineering, IT-Systeme und Banken-/Finanz-IT. Besonders relevant ist es für Atruvia, Allianz, Finanz Informatik, ConSol, CANCOM, Deutsche Telekom, Atos, Deloitte und EY.
 
 ## Tech Stack
 
 - Java 21
 - Spring Boot 3
-- Maven
 - Spring Web
+- Bean Validation
 - Spring Data JPA
 - H2-Datenbank
-- Bean Validation
-- JUnit 5
-- MockMvc
-- GitHub Actions CI
+- Maven
+- JUnit 5 und MockMvc
+- GitHub Actions
 
 ## Funktionen
 
-- IT-Service-Tickets erstellen
-- alle Tickets anzeigen
-- einzelnes Ticket nach ID anzeigen
+- IT-Service-Ticket erstellen
+- Alle Tickets abrufen
+- Einzelnes Ticket nach ID abrufen
 - Ticketstatus ändern
 - Ticket löschen
-- Eingaben mit Bean Validation prüfen
-- Daten über ein JPA-Repository speichern
-- Service-Logik mit JUnit testen
+- Eingaben per Bean Validation prüfen
 - REST-Endpunkte mit MockMvc testen
-
-## API-Endpunkte
-
-| Methode | Pfad | Zweck |
-|---|---|---|
-| POST | `/api/tickets` | Ticket erstellen |
-| GET | `/api/tickets` | alle Tickets anzeigen |
-| GET | `/api/tickets/{id}` | einzelnes Ticket anzeigen |
-| PATCH | `/api/tickets/{id}/status` | Status ändern |
-| DELETE | `/api/tickets/{id}` | Ticket löschen |
 
 ## Projektstruktur
 
-```text
+```txt
 java-service-ticket-api/
+├── src/main/java/com/example/ticketapi/
+│   ├── TicketApiApplication.java
+│   ├── controller/TicketController.java
+│   ├── service/TicketService.java
+│   ├── repository/TicketRepository.java
+│   ├── model/Ticket.java
+│   └── dto/
+├── src/test/java/com/example/ticketapi/
 ├── pom.xml
 ├── README.md
 ├── docs/
-│   ├── application_fit.md
-│   └── recruiter_summary_de.md
-├── examples/
-│   └── api_examples.md
-├── src/main/java/com/example/ticketapi/
-│   ├── TicketApiApplication.java
-│   ├── controller/
-│   │   └── TicketController.java
-│   ├── dto/
-│   │   ├── TicketRequestDTO.java
-│   │   └── TicketResponseDTO.java
-│   ├── model/
-│   │   ├── Priority.java
-│   │   ├── Ticket.java
-│   │   └── TicketStatus.java
-│   ├── repository/
-│   │   └── TicketRepository.java
-│   └── service/
-│       └── TicketService.java
-└── src/test/java/com/example/ticketapi/
-    ├── controller/
-    │   └── TicketControllerTest.java
-    └── service/
-        └── TicketServiceTest.java
+└── examples/
 ```
 
 ## Schnellstart
@@ -83,45 +55,35 @@ mvn test
 mvn spring-boot:run
 ```
 
-Die API läuft anschließend standardmäßig unter:
-
-```text
-http://localhost:8080
-```
-
 ## Tests
 
 ```bash
 mvn test
 ```
 
-Die Tests prüfen die zentrale Service-Logik und mehrere REST-Endpunkte mit MockMvc.
-
-## Beispiel-Request
-
-```bash
-curl -X POST http://localhost:8080/api/tickets \
-  -H "Content-Type: application/json" \
-  -d '{"title":"VPN login failed","description":"User cannot connect to the company VPN.","priority":"HIGH"}'
-```
-
 ## Beispielausgabe
 
-```json
-{
-  "id": 1,
-  "title": "VPN login failed",
-  "description": "User cannot connect to the company VPN.",
-  "status": "OPEN",
-  "priority": "HIGH",
-  "createdAt": "2026-05-15T12:00:00"
-}
+```txt
+POST /api/tickets -> 201 CREATED
+GET /api/tickets -> Liste mit offenen Tickets
+PATCH /api/tickets/1/status?status=IN_PROGRESS -> Status geändert
+```
+
+## Beispiel mit curl
+
+```bash
+curl -X POST http://localhost:8080/api/tickets   -H "Content-Type: application/json"   -d '{"title":"VPN Login schlägt fehl","description":"Ein Nutzer kann sich nicht anmelden.","priority":"HIGH"}'
+
+curl http://localhost:8080/api/tickets
+curl http://localhost:8080/api/tickets/1
+curl -X PATCH "http://localhost:8080/api/tickets/1/status?status=IN_PROGRESS"
+curl -X DELETE http://localhost:8080/api/tickets/1
 ```
 
 ## Hinweis auf synthetische Daten
 
-Dieses Repository ist ein Bewerberprojekt mit synthetischen Beispieldaten. Es bildet kein echtes Ticketsystem und keine produktive Unternehmensinfrastruktur ab.
+Das Projekt verwendet synthetische Beispieldaten und simuliert einen einfachen IT-Service-Prozess. Es ist kein echtes Ticketsystem und kein Cloud-Betrieb.
 
 ## English Summary
 
-This repository is an applicant project for dual study applications in computer science and business information systems. It demonstrates a simple Java REST API with Spring Boot, JPA, validation, a small database layer and automated tests. The project uses synthetic examples and is intentionally scoped for a beginner-to-intermediate applicant portfolio.
+This project is a small Java Spring Boot REST API for managing IT service tickets. It demonstrates basic backend layers, DTOs, validation, JPA persistence with H2 and automated tests. The project uses synthetic examples and is designed as an applicant portfolio project for dual study programs.

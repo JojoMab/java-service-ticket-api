@@ -1,7 +1,4 @@
-Started TicketApiApplication.
-GET /reports/summary
-{
-  "totalTickets": 1,
-  "openTickets": 1,
-  "criticalTickets": 1
-}
+POST /api/tickets -> 201 CREATED
+GET /api/tickets -> 200 OK
+PATCH /api/tickets/1/status?status=IN_PROGRESS -> 200 OK
+DELETE /api/tickets/1 -> 204 NO CONTENT

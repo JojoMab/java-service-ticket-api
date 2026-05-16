@@ -7,13 +7,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Repository auschecken
         uses: actions/checkout@v4
-      - name: Set up Java
+
+      - name: Java 21 einrichten
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 21
-      - name: Build and test with Maven
+          java-version: '21'
+
+      - name: Build und Tests mit Maven
         run: mvn test
