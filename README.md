@@ -1,6 +1,6 @@
-# Java Service Ticket API
-
 ![Java CI](https://github.com/JojoMab/java-service-ticket-api/actions/workflows/java-ci.yml/badge.svg)
+
+# Java Service Ticket API
 
 Dieses Bewerberprojekt ist eine einfache Java-REST-API zur Verwaltung von IT-Service-Tickets. Es zeigt Backend-Grundlagen wie Controller, Service-Schicht, Repository, DTOs, Bean Validation, JPA-Datenhaltung mit H2 und automatisierte Tests. Das Projekt ist bewusst als nachvollziehbares Bewerberprojekt für duale Studiengänge in Informatik und Wirtschaftsinformatik aufgebaut.
 
@@ -55,7 +55,7 @@ mvn test
 mvn spring-boot:run
 ```
 
-## Tests
+## Tests ausführen
 
 ```bash
 mvn test
@@ -82,7 +82,7 @@ curl -X DELETE http://localhost:8080/api/tickets/1
 
 ## Hinweis auf synthetische Daten
 
-Das Projekt verwendet synthetische Beispieldaten und simuliert einen einfachen IT-Service-Prozess. Es ist kein echtes Ticketsystem und kein Cloud-Betrieb.
+Alle Daten sind synthetisch und dienen ausschließlich der Demonstration.
 
 ## English Summary
 
