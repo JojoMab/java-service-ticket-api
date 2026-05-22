@@ -1,0 +1,5 @@
+# Dieses Repository ist ein Java/Maven-Projekt.
+# Es gibt keine Python-Abhaengigkeiten.
+#
+# Java-Abhaengigkeiten werden ueber pom.xml installiert:
+# mvn test

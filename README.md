@@ -55,6 +55,14 @@ mvn test
 mvn spring-boot:run
 ```
 
+Falls lokal mehrere Java-Versionen installiert sind, Java 21 explizit setzen:
+
+```bash
+export JAVA_HOME="/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home"
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
+mvn test
+```
+
 ## Tests ausführen
 
 ```bash
@@ -83,6 +91,8 @@ curl -X DELETE http://localhost:8080/api/tickets/1
 ## Hinweis auf synthetische Daten
 
 Alle Daten sind synthetisch und dienen ausschließlich der Demonstration.
+
+Dieses Projekt ist ein Bewerberprojekt und nicht für den produktiven Einsatz vorgesehen.
 
 ## English Summary
 
