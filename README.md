@@ -8,7 +8,7 @@ Dieses Bewerberprojekt ist eine einfache Java-REST-API zur Verwaltung von IT-Ser
 
 Das Projekt passt zu dualen Studiengängen mit Fokus auf Java, Backend, Software Engineering, IT-Systeme und Banken-/Finanz-IT. Besonders relevant ist es für Atruvia, Allianz, Finanz Informatik, ConSol, CANCOM, Deutsche Telekom, Atos, Deloitte und EY.
 
-## Tech Stack
+## Technologie-Stack
 
 - Java 21
 - Spring Boot 3
@@ -94,6 +94,6 @@ Alle Daten sind synthetisch und dienen ausschließlich der Demonstration.
 
 Dieses Projekt ist ein Bewerberprojekt und nicht für den produktiven Einsatz vorgesehen.
 
-## English Summary
+## Kurzfassung
 
-This project is a small Java Spring Boot REST API for managing IT service tickets. It demonstrates basic backend layers, DTOs, validation, JPA persistence with H2 and automated tests. The project uses synthetic examples and is designed as an applicant portfolio project for dual study programs.
+Dieses Projekt ist eine kleine Java-Spring-Boot-REST-API zur Verwaltung von IT-Service-Tickets. Es zeigt Backend-Schichten, DTOs, Validierung, JPA-Persistenz mit H2 und automatisierte Tests mit synthetischen Beispielen.
